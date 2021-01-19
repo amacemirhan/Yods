@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="660.0" prefWidth="930.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="yods.FXML2Controller">
+   <children>
+      <Label layoutX="572.0" layoutY="48.0" prefHeight="42.0" prefWidth="142.0" text="Öğretmen İsmi:">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="OgrtIsim" layoutX="736.0" layoutY="48.0" prefHeight="42.0" prefWidth="142.0" text="Deneme">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="38.0" layoutY="142.0" prefHeight="480.0" prefWidth="854.0">
+         <children>
+            <VBox layoutX="14.0" layoutY="-4.0" prefHeight="480.0" prefWidth="256.0">
+               <children>
+                  <Label alignment="CENTER" prefHeight="68.0" prefWidth="256.0" text="Sistemdeki Öğrenciler">
+                     <font>
+                        <Font name="System Bold" size="23.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="sis1" prefHeight="44.0" prefWidth="256.0" text="Boş" />
+                  <Label fx:id="sis2" layoutX="10.0" layoutY="83.0" prefHeight="44.0" prefWidth="256.0" text="Boş" />
+                  <Label fx:id="sis3" layoutX="10.0" layoutY="124.0" prefHeight="49.0" prefWidth="256.0" text="Boş" />
+                  <Label fx:id="sis4" layoutX="10.0" layoutY="83.0" prefHeight="51.0" prefWidth="256.0" text="Boş" />
+                  <Label fx:id="sis5" layoutX="10.0" layoutY="124.0" prefHeight="48.0" prefWidth="256.0" text="Boş" />
+                  <Label fx:id="sis6" layoutX="10.0" layoutY="83.0" prefHeight="51.0" prefWidth="256.0" text="Boş" />
+                  <Label fx:id="sis7" layoutX="10.0" layoutY="206.0" prefHeight="47.0" prefWidth="256.0" text="Boş" />
+                  <Label fx:id="sis8" layoutX="10.0" layoutY="165.0" prefHeight="49.0" prefWidth="256.0" text="Boş" />
+                  <Label fx:id="sis9" layoutX="10.0" layoutY="370.0" prefHeight="50.0" prefWidth="256.0" text="Boş" />
+               </children>
+            </VBox>
+            <VBox layoutX="270.0" layoutY="-4.0" prefHeight="480.0" prefWidth="256.0">
+               <children>
+                  <Label alignment="CENTER" prefHeight="69.0" prefWidth="256.0" text="Gelen Danışmanlık İstekleri" textAlignment="CENTER" wrapText="true">
+                     <font>
+                        <Font name="System Bold" size="23.0" />
+                     </font>
+                  </Label>
+                  <CheckBox fx:id="ist1" mnemonicParsing="false" prefHeight="50.0" prefWidth="256.0" text="Boş" />
+                  <CheckBox fx:id="ist2" layoutX="10.0" layoutY="79.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="256.0" text="Boş" />
+                  <CheckBox fx:id="ist3" layoutX="10.0" layoutY="122.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="256.0" text="Boş" />
+                  <CheckBox fx:id="ist4" layoutX="10.0" layoutY="79.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="256.0" text="Boş" />
+                  <CheckBox fx:id="ist5" layoutX="10.0" layoutY="122.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="256.0" text="Boş" />
+                  <CheckBox fx:id="ist6" layoutX="10.0" layoutY="79.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="256.0" text="Boş" />
+                  <CheckBox fx:id="ist7" layoutX="10.0" layoutY="165.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="256.0" text="Boş" />
+                  <CheckBox fx:id="ist8" layoutX="10.0" layoutY="208.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="256.0" text="Boş" />
+               </children>
+            </VBox>
+            <Button fx:id="Onyla" layoutX="625.0" layoutY="224.0" mnemonicParsing="false" onAction="#Onayla" prefHeight="76.0" prefWidth="187.0" text="İsteği Onayla" />
+            <Button fx:id="returnBut" layoutX="625.0" layoutY="310.0" mnemonicParsing="false" onAction="#GeriDon" prefHeight="76.0" prefWidth="187.0" text="Giriş Ekranına Dön" />
+            <VBox layoutX="624.0" layoutY="14.0" prefHeight="200.0" prefWidth="187.0">
+               <children>
+                  <Label prefHeight="56.0" prefWidth="187.0" text="Danışmanlık Yapılan Öğrenciler" textAlignment="CENTER" wrapText="true" />
+                  <Label fx:id="dan1" layoutX="10.0" layoutY="10.0" prefHeight="56.0" prefWidth="187.0" text="Yok" textAlignment="CENTER" wrapText="true" />
+                  <Label fx:id="dan2" layoutX="10.0" layoutY="66.0" prefHeight="56.0" prefWidth="187.0" text="Yok" textAlignment="CENTER" wrapText="true" />
+                  <Label fx:id="dan3" layoutX="10.0" layoutY="122.0" prefHeight="56.0" prefWidth="187.0" text="Yok" textAlignment="CENTER" wrapText="true" />
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+      <Label fx:id="MessageOgrt" layoutX="42.0" layoutY="14.0" prefHeight="102.0" prefWidth="488.0" text="Hoşgeldiniz. En fazla 3 adet öğrenciye danışmanlık yapabilirsiniz." wrapText="true">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

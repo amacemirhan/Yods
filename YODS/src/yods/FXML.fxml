@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="660.0" prefWidth="930.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="yods.FXMLController">
+   <children>
+      <AnchorPane layoutX="112.0" layoutY="88.0" prefHeight="466.0" prefWidth="688.0">
+         <children>
+            <Label layoutX="64.0" layoutY="55.0" prefHeight="62.0" prefWidth="189.0" text="Giriş Yap" textFill="#4f4fee" textOverrun="CLIP">
+               <font>
+                  <Font name="Times New Roman" size="43.0" />
+               </font>
+            </Label>
+            <VBox layoutX="55.0" layoutY="152.0" prefHeight="240.0" prefWidth="189.0">
+               <children>
+                  <ComboBox fx:id="GirisCombo" nodeOrientation="RIGHT_TO_LEFT" prefHeight="62.0" prefWidth="210.0" promptText="Seç" />
+                  <TextField fx:id="GirisIsim" prefHeight="57.0" prefWidth="189.0" promptText="İsim" />
+                  <TextField fx:id="GirisSifre" prefHeight="57.0" prefWidth="189.0" promptText="Şifre" />
+                  <Button fx:id="GirisButon" mnemonicParsing="false" onAction="#ClickGiris" prefHeight="79.0" prefWidth="201.0" text="Giriş" />
+               </children>
+            </VBox>
+            <VBox layoutX="400.0" layoutY="152.0" prefHeight="240.0" prefWidth="189.0">
+               <children>
+                  <ComboBox fx:id="KayitCombo" nodeOrientation="RIGHT_TO_LEFT" prefHeight="62.0" prefWidth="210.0" promptText="Seç" />
+                  <TextField fx:id="KayitIsim" prefHeight="57.0" prefWidth="189.0" promptText="İsim" />
+                  <TextField fx:id="KayitSifre" prefHeight="57.0" prefWidth="189.0" promptText="Şifre" />
+                  <Button fx:id="KayitButon" mnemonicParsing="false" onAction="#ClickKayit" prefHeight="79.0" prefWidth="201.0" text="Kayıt Ol" />
+               </children>
+            </VBox>
+            <Label layoutX="400.0" layoutY="55.0" prefHeight="62.0" prefWidth="189.0" text="Kayıt Ol" textFill="#4f4fee" textOverrun="CLIP">
+               <font>
+                  <Font name="Times New Roman" size="43.0" />
+               </font>
+            </Label>
+            <Label fx:id="Etiket" alignment="CENTER" layoutX="56.0" layoutY="392.0" prefHeight="58.0" prefWidth="536.0" text="Hosgeldiniz.." textFill="#4f4fee">
+               <font>
+                  <Font name="Times New Roman Bold" size="39.0" />
+               </font></Label>
+         </children>
+      </AnchorPane>
+      <Label layoutX="125.0" layoutY="14.0" prefHeight="79.0" prefWidth="696.0" text="Yabancı Öğrenci Denetim Sistemi" textFill="#4f4fee" textOverrun="CLIP">
+         <font>
+            <Font name="Times New Roman Bold" size="44.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
